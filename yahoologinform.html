@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-box {
+      background: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    h1 {
+      color: #6001d2;
+      margin-bottom: 20px;
+      font-size: 28px;
+    }
+    h2 {
+      font-size: 18px;
+      margin: 10px 0 20px;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 14px;
+    }
+    .btn {
+      background: #7b38f7;
+      color: #fff;
+      border: none;
+      border-radius: 20px;
+      padding: 10px;
+      width: 100%;
+      cursor: pointer;
+      font-size: 16px;
+      margin-top: 10px;
+    }
+    .btn:hover {
+      background: #5c2ecf;
+    }
+    .extra {
+      display: flex;
+      justify-content: space-between;
+      font-size: 13px;
+      margin: 10px 0;
+    }
+    .create {
+      background: none;
+      border: 1px solid #7b38f7;
+      color: #7b38f7;
+      border-radius: 20px;
+      padding: 10px;
+      width: 100%;
+      margin-top: 10px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .create:hover {
+      background: #f3e9ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h1>yahoo!</h1>
+    <h2>Sign in<br><small>using your Yahoo account</small></h2>
+    <form onsubmit="event.preventDefault(); alert('¡Tengo tus datos!');">
+      <input type="text" placeholder="Username, email, or mobile" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <div class="extra">
+      <label><input type="checkbox" checked> Stay signed in</label>
+      <a href="#">Forgot username?</a>
+    </div>
+    <button class="create">Create an account</button>
+  </div>
+</body>
+</html>
